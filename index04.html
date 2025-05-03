@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Adivinhe o Número</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e1f5fe;
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 350px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    input {
+      padding: 10px;
+      font-size: 18px;
+      width: 80px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-top: 15px;
+      font-size: 16px;
+      background-color: #0288d1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0277bd;
+    }
+
+    #mensagem {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Jogo: Adivinhe o Número</h1>
+    <p>Escolha um número de 1 a 10:</p>
+    <input type="number" id="palpite" min="1" max="10">
+    <br>
+    <button onclick="verificarPalpite()">Tentar</button>
+    <p id="mensagem"></p>
+  </div>
+
+  <script>
+    const numeroSecreto = Math.floor(Math.random() * 10) + 1;
+
+    function verificarPalpite() {
+      const palpite = parseInt(document.getElementById("palpite").value);
+      const mensagem = document.getElementById("mensagem");
+
+      if (isNaN(palpite) || palpite < 1 || palpite > 10) {
+        mensagem.textContent = "Digite um número válido entre 1 e 10.";
+      } else if (palpite === numeroSecreto) {
+        mensagem.textContent = `Parabéns! Você acertou: ${numeroSecreto}`;
+      } else {
+        mensagem.textContent = palpite < numeroSecreto ? "Tente um número maior." : "Tente um número menor.";
+      }
+    }
+  </script>
+  <a href="index05.html">Perfeito! Agora vamos criar um checklist interativo</a>
+</body>
+</html>

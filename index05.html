@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist Interativo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f8e9;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 70%;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      margin-left: 10px;
+      background-color: #7cb342;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #689f38;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    li {
+      padding: 10px;
+      font-size: 18px;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    li.concluido {
+      text-decoration: line-through;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Minha Lista de Tarefas</h1>
+    <input type="text" id="itemInput" placeholder="Digite uma tarefa...">
+    <button onclick="adicionarItem()">Adicionar</button>
+    <ul id="lista"></ul>
+  </div>
+
+  <script>
+    function adicionarItem() {
+      const input = document.getElementById("itemInput");
+      const texto = input.value.trim();
+
+      if (texto === "") return;
+
+      const li = document.createElement("li");
+      li.textContent = texto;
+      li.onclick = function () {
+        li.classList.toggle("concluido");
+      };
+
+      document.getElementById("lista").appendChild(li);
+      input.value = "";
+      input.focus();
+    }
+  </script>
+</body>
+</html>

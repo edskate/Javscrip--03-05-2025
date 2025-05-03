@@ -288,6 +288,30 @@
           "email": "edskateicevida@gmail.com"
         },
         "timeSpent": 4
+      },
+      {
+        "date": "2025-05-03T06:16:24.721Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 3
+      },
+      {
+        "date": "2025-05-03T06:16:56.440Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 32
+      },
+      {
+        "date": "2025-05-03T06:17:04.932Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 9
       }
     ]
   }

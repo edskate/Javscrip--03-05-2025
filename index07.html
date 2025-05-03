@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlist Touch</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #1db954;
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .player {
+      padding: 2rem;
+    }
+
+    audio {
+      width: 90%;
+      max-width: 500px;
+      margin: 1rem auto;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #282828;
+      margin: 0.5rem auto;
+      padding: 1rem;
+      max-width: 500px;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    li:hover, li:active {
+      background: #1db954;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Minha Playlist Touch</header>
+
+  <div class="player">
+    <audio id="audioPlayer" controls>
+      <source id="audioSource" src="" type="audio/mpeg">
+      Seu navegador não suporta áudio HTML5.
+    </audio>
+
+    <ul id="playlist">
+      <li data-src="">🎵 Música 1 - Artista A</li>
+      <li data-src="">🎵 Música 2 - Artista B</li>
+      <li data-src="">🎵 Música 3 - Artista C</li>
+    </ul>
+  </div>
+
+  <script>
+    const playlist = document.querySelectorAll('#playlist li');
+    const audioPlayer = document.getElementById('audioPlayer');
+    const audioSource = document.getElementById('audioSource');
+
+    playlist.forEach(item => {
+      item.addEventListener('click', () => {
+        audioSource.src = item.getAttribute('data-src');
+        audioPlayer.load();
+        audioPlayer.play();
+      });
+    });
+  </script>
+
+</body>
+</html>

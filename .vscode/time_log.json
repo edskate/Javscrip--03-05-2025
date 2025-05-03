@@ -312,6 +312,72 @@
           "email": "edskateicevida@gmail.com"
         },
         "timeSpent": 9
+      },
+      {
+        "date": "2025-05-03T07:23:40.093Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 3995
+      },
+      {
+        "date": "2025-05-03T07:23:40.252Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 3995
+      },
+      {
+        "date": "2025-05-03T07:24:08.939Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 29
+      }
+    ],
+    "index07.html": [
+      {
+        "date": "2025-05-03T07:24:21.606Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 4
+      },
+      {
+        "date": "2025-05-03T07:24:30.389Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 9
+      },
+      {
+        "date": "2025-05-03T07:24:34.878Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 4
+      },
+      {
+        "date": "2025-05-03T07:25:19.579Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 45
+      },
+      {
+        "date": "2025-05-03T07:25:27.144Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 8
       }
     ]
   }

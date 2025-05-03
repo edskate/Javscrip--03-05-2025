@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Modelo JS Básico</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      width: 300px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Basic JS Program</h1>
+    <p>Click the button below to enter your name:</p>
+    <button onclick="mostrarMensagem()">Começar</button>
+    <p id="mensagem"></p>
+  </div>
+
+  <script>
+    function mostrarMensagem() {
+      const nome = prompt("Digite seu nome:");
+      if (nome) {
+        document.getElementById("mensagem").textContent = `Hello, ${nome}! Glad to have you here.`;
+      } else {
+        document.getElementById("mensagem").textContent = `You did not enter a name.`;
+      }
+    }
+  </script>
+
+
+    <a href="index04.html">soma dois números digitados</a>
+</p>
+</body>
+</html>

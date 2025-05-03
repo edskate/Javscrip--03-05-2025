@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Soma de Números</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e0f7fa;
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      width: 350px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input {
+      margin: 10px;
+      padding: 10px;
+      width: 80px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #004d40;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Somador Simples</h1>
+    <p>Digite dois números para somar:</p>
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2">
+    <br>
+    <button onclick="somar()">Somar</button>
+    <p id="resultado"></p>
+  </div>
+
+  <script>
+    function somar() {
+      const n1 = parseFloat(document.getElementById("num1").value);
+      const n2 = parseFloat(document.getElementById("num2").value);
+
+      if (isNaN(n1) || isNaN(n2)) {
+        document.getElementById("resultado").textContent = "Por favor, digite dois números válidos.";
+      } else {
+        const soma = n1 + n2;
+        document.getElementById("resultado").textContent = `Resultado: ${soma}`;
+      }
+    }
+  </script>
+</body>
+</html>

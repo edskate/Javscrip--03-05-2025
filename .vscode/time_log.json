@@ -24,6 +24,40 @@
           "email": "edskateicevida@gmail.com"
         },
         "timeSpent": 4
+      },
+      {
+        "date": "2025-05-03T05:57:50.627Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 29
+      }
+    ],
+    "index02.html": [
+      {
+        "date": "2025-05-03T05:58:00.306Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 4
+      },
+      {
+        "date": "2025-05-03T05:58:20.549Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 20
+      },
+      {
+        "date": "2025-05-03T05:58:30.543Z",
+        "user": {
+          "name": "Edy_97_2024",
+          "email": "edskateicevida@gmail.com"
+        },
+        "timeSpent": 10
       }
     ]
   }
